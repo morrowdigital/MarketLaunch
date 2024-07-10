@@ -1,0 +1,49 @@
+/node_modules
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# expo
+**/.expo/*
+
+# next.js
+**/.next/*
+/out/
+
+# tamagui
+**/.tamagui/*
+
+# production
+/build
+
+# debug
+npm-debug.log*
+turbo-lint.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env.local
+.env.*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# os
+.DS_Store
+THUMBS_DB
+thumbs.db
+
+# editors
+.vscode/*
+.idea/*
+
+# misc
+temp

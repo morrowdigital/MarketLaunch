@@ -1,0 +1,25 @@
+{
+  "name": "Order fields",
+  "collection": "orders",
+  "fields": [
+    {
+      "id": "vendor",
+      "type": "lookup",
+      "label": "Vendor",
+      "root": true,
+      "required": false,
+      "unique": false,
+      "fallback": false,
+      "collection": "accounts",
+      "query": {
+        "group": "vendors"
+      },
+      "key_field": "id",
+      "admin_span": 4,
+      "admin_zone": "details",
+      "admin_enabled": true
+    }
+  ],
+  "root": "content",
+  "default_root": true
+}

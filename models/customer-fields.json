@@ -1,0 +1,63 @@
+{
+  "name": "Customer fields",
+  "collection": "accounts",
+  "fields": [
+    {
+      "id": "contact_email",
+      "type": "short_text",
+      "label": "Contact Email",
+      "ui": "email",
+      "root": "content",
+      "required": false,
+      "unique": false,
+      "localized": false,
+      "admin_span": 4,
+      "admin_zone": "contact",
+      "admin_enabled": true,
+      "public": true
+    },
+    {
+      "id": "business_name",
+      "type": "short_text",
+      "label": "Business Name",
+      "root": "content",
+      "required": false,
+      "unique": false,
+      "localized": false,
+      "admin_span": 4,
+      "admin_zone": "details",
+      "admin_enabled": true,
+      "public": true
+    },
+    {
+      "id": "vendor_logo",
+      "type": "short_text",
+      "label": "Vendor Logo",
+      "ui": "url",
+      "root": "content",
+      "required": false,
+      "unique": false,
+      "localized": false,
+      "admin_span": 4,
+      "admin_zone": "details",
+      "admin_enabled": true,
+      "public": true
+    },
+    {
+      "id": "stripe_connect_id",
+      "type": "short_text",
+      "label": "Stripe Connect ID",
+      "root": "content",
+      "required": false,
+      "unique": false,
+      "fallback": false,
+      "localized": false,
+      "admin_span": 4,
+      "admin_zone": "details",
+      "admin_enabled": true,
+      "public": true
+    }
+  ],
+  "root": "content",
+  "default_root": true
+}

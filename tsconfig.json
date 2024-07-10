@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": ".",
+    "paths": {
+      "react-native": ["react-native-web"],
+      "~/app-config/*": ["src/app-config/*"],
+      "~/components/*": ["src/components/*"],
+      "~/pages/*": ["src/pages/*"],
+      "~/state/*": ["src/state/*"],
+      "~/utils/*": ["src/utils/*"],
+      "~/types/*": ["src/types/*"],
+      "~/api-helpers/*": ["src/api-helpers/*"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "useDefineForClassFields": true,
+    "types": ["reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

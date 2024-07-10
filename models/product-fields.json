@@ -1,0 +1,61 @@
+{
+  "name": "Product fields",
+  "collection": "products",
+  "fields": [
+    {
+      "id": "vendor",
+      "type": "lookup",
+      "label": "Vendor",
+      "root": true,
+      "required": false,
+      "unique": false,
+      "fallback": false,
+      "model": "model",
+      "collection": "accounts",
+      "query": {
+        "group": "vendors"
+      },
+      "key_field": "id",
+      "admin_span": 4,
+      "admin_zone": "details",
+      "admin_enabled": true
+    },
+    {
+      "id": "stock_status",
+      "type": "select",
+      "label": "Stock Status",
+      "root": "content",
+      "options": [
+        {
+          "label": "Active",
+          "value": "in_stock"
+        },
+        {
+          "label": "Discontinued",
+          "value": "discontinued"
+        },
+        {
+          "label": "Preorder",
+          "value": "preorder"
+        },
+        {
+          "label": "Backorder",
+          "value": "backorder"
+        },
+        {
+          "label": "Out of stock",
+          "value": "out_of_stock"
+        }
+      ],
+      "required": true,
+      "unique": false,
+      "public": true,
+      "fallback": false,
+      "admin_span": 4,
+      "admin_zone": "inventory",
+      "admin_enabled": true
+    }
+  ],
+  "root": "content",
+  "default_root": true
+}
