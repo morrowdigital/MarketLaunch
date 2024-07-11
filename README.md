@@ -2,7 +2,7 @@
 
 An expertly engineered Next.js frontend that gives you everything you need to build a [Swell powered](https://swell.is?utm_source=marketlaunch-github) marketplace app in days rather than months, saving you time and money.
 
-Built by [Morrow](https://www.themorrow.digital/), React Native and Expo Specialists for Pioneering Businesses.
+Built by [Morrow](https://www.themorrow.digital?utm_source=ml-gh-readme), React Native and Expo Specialists for Pioneering Businesses.
 
 ## About MarketLaunch
 MarketLaunch is a development kit designed to help speed up the development of new marketplace applications. Right now MarketLaunch is tied into [Swell’s API](https://developers.swell.is/guides/quickstart-guide) as we found, through extensive research, Swell offered the best headless CMS for building marketplace applications. 
@@ -49,3 +49,16 @@ A public deployment is available on [Vercel](https://market-launch.vercel.app/),
 2. Run `yarn install` to fetch and install all dependencies.
 3. Run `yarn marketlaunch:setup` and follow the instructions to setup Swell.
 4. Run `yarn dev` to start the nextJS development mode.
+
+--- 
+
+## Development Support
+
+### Reporting issues
+If you find issues with MarketLaunch please raise issues via GitHub issues on this repo.
+
+### Finding issues and submitting fixes
+If you find an issue with MarketLaunch but you're also able to find it, please feel free to make a PR to bring your fix into the main MarketLaunch repo. Your PR will be reviewed and tested by the [Morrow](https://themorrow.digital?utm_source=ml-gh-readme) team before it's accepted.
+
+### Development support
+If you are building an app that uses MarketLaunch and you need some more hands-on support then please reach out to the [Morrow](https://themorrow.digital/contact?utm_source=ml-gh-readme) team
