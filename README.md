@@ -50,9 +50,7 @@ A public deployment is available on [Vercel](https://market-launch.vercel.app/),
 3. Run `yarn marketlaunch:setup` and follow the instructions to setup Swell.
 4. Run `yarn dev` to start the nextJS development mode.
 
---- 
-
-## Development Support
+## MarketLaunch Support
 
 ### Reporting issues
 If you find issues with MarketLaunch please raise issues via GitHub issues on this repo.
