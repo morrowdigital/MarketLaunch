@@ -26,6 +26,7 @@ function getErrorObjectSwellError<E>(message: string, details: E) {
     success: false,
     source: 'swell',
     code: ErrorCodes.SWELL_ERROR,
+    message,
     details,
   } as ApiErrorResponse<E>;
 }
