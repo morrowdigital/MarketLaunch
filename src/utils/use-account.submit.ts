@@ -18,11 +18,15 @@ export const useAccountSubmit = (onFormSubmit: () => Promise<FormSubmitResult>) 
       return;
     }
 
-    if (result?.error) {
+    if (result?.action === 'error') {
       return show('Error', { message: result.error, additionalInfo: { error: true } });
     }
 
-    show('Success', { message: 'Account created successfully' });
-    push(Routes.Login).then();
+    if (result?.action === 'success') {
+      show('Success', { message: 'Account created successfully' });
+      await push(Routes.Login);
+    }
+
+    throw Error('Unexpected result.action value!');
   };
 };
